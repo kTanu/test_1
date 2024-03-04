@@ -1,0 +1,25 @@
+.column {
+                      float: left;
+                      width:10px;
+                      height:20px;
+                      margin-left:0px;
+
+
+                      /* Should be removed. Only for demonstration */
+                    }
+
+.column_one {
+                      float: right;
+                      width:10px;
+                      height:20px;
+                      
+                       /* Should be removed. Only for demonstration */
+                    }                    
+
+
+                    /* Clear floats after the columns */
+.row:after {
+                      content: "";
+                      display: table;
+                      clear: both;
+                    }

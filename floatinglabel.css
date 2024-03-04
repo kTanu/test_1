@@ -1,0 +1,57 @@
+/* CSS input placeholder floating effect */
+
+.form-group {
+    position: relative;
+    margin: 18px 0px 4px 0px;
+}
+
+.form-group input {
+    padding: 9px 9px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: #F1F1F1 solid 1px;
+    background-color: #F1F1F1;
+    color: #14213D;
+    transition: 0.15s all ease;
+}
+
+.form-group input:focus {
+    border-color: #ACACAC;
+}
+
+.form-group input::placeholder {
+    color:transparent;
+}
+
+.form-group .form-label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 0 16px;
+    font-size: 18px;
+    color: #000;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+
+.form-group input:focus + .form-label,
+.form-group input:not(:placeholder-shown) + .form-label {
+    transform: translate(9px, -30px);
+    background-color: transparent;
+    font-size: 14px;
+    padding: 0 0px;
+    color: #000;
+}
+
+/*
+
+.modal-right{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    width: 50%;
+}*/
